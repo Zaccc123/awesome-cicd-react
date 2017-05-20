@@ -6,4 +6,4 @@ test:
     - npm test -- --coverage
   post:
     - npm install -g codeclimate-test-reporter
-    - codeclimate-test-reporter < lcov.info
+    - codeclimate-test-reporter < coverage/lcov.info
