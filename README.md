@@ -1,5 +1,5 @@
 # Awesome CICD React
-[![CircleCI](https://circleci.com/gh/Zaccc123/awesome-cicd-react.svg?style=svg)](https://circleci.com/gh/Zaccc123/awesome-cicd-react)
+[![CircleCI](https://circleci.com/gh/Zaccc123/awesome-cicd-react.svg?style=svg)](https://circleci.com/gh/Zaccc123/awesome-cicd-react) [![Code Climate](https://codeclimate.com/github/Zaccc123/awesome-cicd-react/badges/gpa.svg)](https://codeclimate.com/github/Zaccc123/awesome-cicd-react) [![Test Coverage](https://codeclimate.com/github/Zaccc123/awesome-cicd-react/badges/coverage.svg)](https://codeclimate.com/github/Zaccc123/awesome-cicd-react/coverage)
 
 This project aim to show how easy it is to set up a fully automated suites of CI and CD with the new [Create React App](https://github.com/facebookincubator/create-react-app).
 
