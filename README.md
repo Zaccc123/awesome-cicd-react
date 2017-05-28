@@ -4,9 +4,13 @@
 This project aim to show how easy it is to set up a fully automated suites of CI and CD with the new [Create React App](https://github.com/facebookincubator/create-react-app).
 
 ## Automated CI & CD Setup
-Using the new [Create React App](https://github.com/facebookincubator/create-react-app), the setup of a fully automated CI and CD stack is relatively easy with [CircleCI](https://circleci.com) and [Heroku](https://heroku.com).
+Using the new [Create React App](https://github.com/facebookincubator/create-react-app), the setup of a fully automated CI and CD stack is relatively easy with [CircleCI](https://circleci.com), [CodeClimate](https://codeclimate.com) and [Heroku](https://heroku.com).
 
-### Step 1: Update node to use 6.0.0
+The full post can be view at this [blog post](https://www.botzeta.com/post/12/).
+
+## TLDR Version
+
+### Step 1: CI setup
 As the default `node` version is not >6.0.0 that is required, we have to add a `circle.yml` file in the root directory. The conent is this:
 
 ```yml
@@ -17,7 +21,14 @@ machine:
 
 Then head over to [CircleCI](https://circleci.com) to build the project.
 
-### Step 2: Create a Heroku App
+### Step 2: Setup CodeClimate
+Now, head over to [CodeClimate](https://codeclimate.com), sign in and build the created github project. We should get this at the end of analyse:
+
+In order to use `Test Coverage` feedback, we will also need to copy the `Test Reporter ID` from `Settings > Test Coverage` and add it into CircleCI environment variable.
+
+In CircleCI, navigate to `Project > Settings > Environment variable` and add `CODECLIMATE_REPO_TOKEN` with copied id.
+
+### Step 3: Create a Heroku App
 Next, we will use a [buildpack](https://github.com/mars/create-react-app-buildpack) to create our heroku app.
 
 ```bash
@@ -26,7 +37,7 @@ $ git push heroku master
 $ heroku open
 ```
 
-### Step 3: Setup Automated Deployment
+### Step 4: Setup Automated Deployment
 Navigate to the newly create app in [Heroku Dashboard](https://heroku.com).
 
 - Go to `Deploy` tab and `Connect` to the correct github repo.
