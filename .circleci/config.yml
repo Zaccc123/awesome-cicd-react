@@ -1,8 +1,6 @@
 version: 2
 jobs:
   build:
-    environment:
-      CC_TEST_REPORTER_ID: YOUR_REPO_CC_TEST_REPORTER_ID
     docker:
       - image: circleci/node:6
     steps:
