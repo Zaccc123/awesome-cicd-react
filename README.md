@@ -8,7 +8,7 @@ This project aim to show how easy it is to set up a fully automated suites of CI
 
 Using the new [Create React App](https://github.com/facebookincubator/create-react-app), the setup of a fully automated CI and CD stack is relatively easy with [CircleCI](https://circleci.com), [CodeClimate](https://codeclimate.com) and [Heroku](https://heroku.com).
 
-The full post can be view at this [blog post](https://zaccc123.github.io/blog/2017/continuous-integration-and-deployment-setup-for-react-app/).
+The full post can be view at this [blog post](https://medium.freecodecamp.org/how-to-set-up-continuous-integration-and-deployment-for-your-react-app-d09ae4525250/).
 
 ## TLDR Version
 
