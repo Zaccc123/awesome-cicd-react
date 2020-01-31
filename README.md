@@ -66,7 +66,7 @@ $ git push heroku master
 $ heroku open
 ```
 
-### Step 4: Setup Automated Deployment
+### Step 4: Setup Automated Deployments
 
 Navigate to the newly create app in [Heroku Dashboard](https://heroku.com).
 
